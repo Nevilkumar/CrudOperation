@@ -1,0 +1,35 @@
+<div class="container">
+
+    <div class="title">
+        <h2><a class="btn btn1" href="/new">New User</a>Employees Management System</h2>
+    </div>
+    <div  class="details">
+        <table>
+            <thead>
+              <th class="table-header">Name</th>
+              <th class="table-header">Email</th>
+              <th class="table-header">Mobile</th>
+              <th class="table-header">City</th>
+              <th class="table-header"></th>
+            </thead>
+            
+            <tbody>
+                <% employees.forEach(employee => { %>
+                    <tr>
+                        <td><%= employee.fullName %></td>
+                        <td><%= employee.email %></td>
+                        <td><%= employee.mobile %></td>
+                        <td><%= employee.city %></td>
+                        <td><a class="btn btn1" href="/<%= employee.id %>">Edit</a><form style="display: inline-block" action="\<%= employee.id %>?_method=delete" method="POST">
+                            <button class="btn btn2" type="submit">Delete</button></form></td>
+                        
+                    </tr>
+                <% }); %>
+            </tbody>
+            
+    
+        </table>
+    </div>
+        
+
+</div>
