@@ -22,7 +22,7 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({limit:'10mb', extended:false}));
 
 
-//DB connection
+//DB Connection
 mongoose.connect('mongodb://localhost:27017/EmployeeDB', { useNewUrlParser:true, useUnifiedTopology:true })
 .then(() => console.log('Connection Successfull'))
 .catch((err) => console.log('Error in DB connection :'+ err));
