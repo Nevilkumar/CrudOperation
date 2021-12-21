@@ -5,8 +5,12 @@
     --purple-dark:#52057B;
     --purple-light:#BC6FF1;
     --blue:#293A80;
-    --red:rgb(212, 60, 0);
+    --red:rgb(212, 60, 0, 0.9);
     --lightred:#f9433dcc;
+    --lightgreen:#8ee4af;
+    --darkblue:#4056a1;
+    --greyishwhite:#edf5e1;
+    --lightyellow:#c5cbe3;
 }
 ::-webkit-scrollbar{
     display: none;
@@ -22,7 +26,7 @@ input::-webkit-inner-spin-button {
     box-sizing: border-box;
     font-family: 'Kurale', serif;
     font-family: 'Raleway', sans-serif;
-    background: var(--purple-light);
+    background: var(--lightyellow);
     font-size: 20px;
     font-weight: 600;
 }
@@ -31,7 +35,7 @@ input::-webkit-inner-spin-button {
     width: 90%;
     margin: auto;
     margin: 3rem auto;
-    background: var(--purple-dark);
+    background: var(--darkblue);
     padding: 1rem;
     border-radius: 4px;
 }
@@ -42,10 +46,20 @@ input::-webkit-inner-spin-button {
     display: flex;
     padding-left: 1rem;
     justify-content: flex-start;
+    align-items: center;
     line-height: 63px;
 }
+.title a{
+    height: 45px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
 .title h2{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-left: 20px;
 }
 .details{
     padding: 10px 5px;
@@ -61,7 +75,7 @@ table {
 .table-header{
     font-size: 28px;
     letter-spacing: 1px;    
-    color: var(--purple-dark);
+    color: var(--blue);
 }
  
 td, th {
@@ -73,7 +87,7 @@ td, th {
 .btn{
     text-decoration: none;
     padding: 0.5rem 1rem;
-    background: var(--blue);
+    background: var(--darkblue);
     cursor: pointer;
     color: white;
     font-weight: 600;
